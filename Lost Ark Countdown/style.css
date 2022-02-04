@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --number-color: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(228,161,15,1) 35%, rgba(255,255,255,1) 100%);
+}
+
+.bg{
+    background: url(assets/cover.jpg) no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+*{
+    /* Sorry Sorry */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 2s ease;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 9rem 10%;
+    min-height: 100vh;
+    gap: 1.5rem;
+    padding-bottom: 9rem;
+}
+
+.container .content{
+    flex: 1 1 400px;
+}
+
+.container .content .title{
+    font-size: 4rem;
+    text-transform: none;
+    color: #e4a10f;
+    text-shadow: .4rem .3rem 1rem rgba(102, 102, 102, 0.233);
+}
+
+.container .content .countdown{
+    display: flex;
+    gap: 8rem;
+    padding: 1rem 0;
+}
+
+.container .content .countdown .box{
+    background: rgba(0, 0, 0, 0.281);
+    padding: .5rem;
+    border: 5px solid #f01539;
+    border-radius: .5rem;
+    text-align: center;
+    flex: 1 1 20px;
+}
+
+.container .content .countdown .box h3{
+    font-size: 4.8rem;
+    color: #fff;
+}
+
+.container .content .countdown .box span{
+    font-size: 2.2rem;
+    color: #f01539;
+    padding: .4rem;
+}
+
+/* Responsive Way */
+
+@media (max-width:500px){
+
+    .container{
+        padding: 20px;
+    }
+
+    .container .content{
+        text-align: center;
+    }
+    .container .content .title{
+        font-size: 30px;
+    }
+
+    .container .content p{
+        font-size: 12px;
+    }
+    .container .content .countdown{
+        gap: 5px;
+    }
+
+    .container .content .countdown h3{
+        font-size: 25px;
+    }
+    .container .content .countdown span{
+        font-size: 15px;
+    }
+}
